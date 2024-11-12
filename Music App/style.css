@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tangerine:wght@400;700&family=Unbounded:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1A1A19;
+    font-family: poppins, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    background-color: black;
+    height: 65px;
+    align-items: center;
+    width: 1519.2px;
+}
+
+.navbar ul li {
+    color: white;
+    padding: 15px;  
+}
+#tunifyLogo {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    font-family: Delius, sans-serif;
+}
+
+#tunifyLogo img {
+    height: 40px;
+    width: auto;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.container {
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    width: 70%;
+    /* margin: 10px; */
+    border-radius: 12px;
+    background: url("images/bg.png") center center;
+    background-size: cover;
+}
+
+.container h1 {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.bottom {
+    background-color: black;
+    height: 100px;
+    width: 1519.2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0; 
+    margin-top: 50px;
+}
+
+.fa-circle-play {
+    cursor: pointer;
+}
+
+.fa-circle-pause {
+    cursor: pointer;
+}
+
+#progressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.icons {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.icons i {
+    margin: 0px 2px;
+}
+
+.songsContainer {
+    width: 580px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 440px;
+    overflow-y: auto;
+    margin-top: 25px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.songList {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border: 0.5px solid ghostwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.songList  i {
+    color: gainsboro;
+}
+
+#song1 {
+    background: url("covers/shiv_tandav.webp") center center;
+    background-size: cover;
+}
+
+#song2 {
+    background: url("covers/Shri\ Hanuman\ Chalisa.webp") center center;
+    background-size: cover;
+}
+
+#song3 {
+    background: url("covers/Achyutam-Keshavam\(PagalNew.Com.Se\).jpg") center center;
+    background-size: cover;
+}
+
+#song4 {
+    background: url("covers/Shri\ Krishna\ Govind\ Hare\ Murari_320\(PagalWorld.com.sb\).jpg") center center;
+    background-size: cover;
+}
+
+#song5 {
+    background: url("covers/Ram Siya Ram - Adipurush 320 Kbps.jpg") center center;
+    background-size: cover;
+}
+
+#song6 {
+    background: url("covers/Aayi\ Nai_64\(PagalWorld.com.sb\).jpg") center center;
+    background-size: cover;
+}
+
+#song7 {
+    background: url("covers/Aaj\ Ki\ Raat_64\(PagalWorld.com.sb\).jpg") center center;
+    background-size: cover;
+}
+
+#song8 {
+    background: url("covers/Bhool\ Bhulaiyaa\ 3_64\(PagalWorld.com.sb\).jpg") center center;
+    background-size: cover;
+}
+
+#song9 {
+    background: url("covers/Jaana\ Samjho\ Na_64\(PagalWorld.com.sb\).jpg") center center;
+    background-size: cover;
+}
+
+#song10 {
+    background: url("covers/Kesariya\ \(Dance\ Mix\)_64\(PagalWorld.com.sb\).jpg") center center;
+    background-size: cover;
+}
+
+
+.songsContainer::-webkit-scrollbar{
+    background-color: black;
+} 
+
+.songInfo {
+    position: absolute;
+    left: 9.1rem;
+}
+
+#gif {
+    width: 40px;
+    margin: 0px 10px;
+    opacity: 0;
+    transition: 0.8s;
+} 
+
+/* mobile */
+
+@media (max-width: 720px) {
+    .container, .navbar ul, .bottom {
+        width: 100%;
+    }
+
+    .songsContainer {
+        width: 90%;
+    }
+    
+    .songList {
+        width: 80px;
+        height: 80px;
+    }
+}
